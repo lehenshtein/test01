@@ -1,0 +1,32 @@
+.out
+    width: 100%
+    max-width: 1024px
+    min-width: 320px
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    margin: 0 auto
+    &::before
+        content: " "
+        background-color: #fff
+        position: absolute
+        top: 0
+        left: -210px
+        width: 210px
+        height: 100%
+        z-index: 9
+    &::after
+        content: " "
+        background-color: #fff
+        position: absolute
+        top: 0
+        right: -201px
+        width: 201px
+        height: 100%
+        z-index: 9
++r(1024)
+    .out
+        &::before
+            display: none
+        &::after
+            display: none

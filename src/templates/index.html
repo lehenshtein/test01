@@ -1,0 +1,21 @@
+---
+title: test
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	{% include "partials/_header.html" %}
+    {% include "partials/_aside-l.html" %}
+    {% include "partials/_aside-r.html" %}
+		
+		<section class="content-wrapper">
+		    <div class="page-description"><h2 class="subtitle">page description</h2></div>
+		     <div class="content-wrapper__inside">
+		         <div class="content">content</div>
+		         <div class="content__side">
+		             <div class="visible">always visible block</div>
+		         </div>
+		     </div>
+    </section>
+{% include "partials/_footer.html" %}
+{% endblock %}

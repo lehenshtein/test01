@@ -1,0 +1,25 @@
+.aside__fix
+    position: fixed
+    background-color: #e0d5d5
+    width: 200px
+    height: 100vh
+.aside-l, .aside-r
+    top: 40px
+    position: absolute
+    transition: all .5s
+.aside-l
+    margin-left: -201px
+    &.active
+        margin-left: 0px
+.aside-r
+    right: 0px
+    &.active
+        right: 200px
++r(620)
+    .aside__fix
+        z-index: 2
++r(400)
+    .aside__fix
+        width: 50%
+    .aside-r.active
+        right: 50%
